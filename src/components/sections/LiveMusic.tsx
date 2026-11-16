@@ -67,26 +67,26 @@ export function LiveMusic({ content }: { content: SiteContent["music"] }) {
         </Reveal>
 
         {/* Mosaic */}
-        <div className="mt-16 grid grid-cols-2 gap-3 sm:mt-20 sm:gap-4 lg:grid-cols-12 lg:grid-rows-[repeat(2,minmax(0,17rem))]">
+        <div className="mt-16 grid grid-cols-2 gap-3 sm:mt-20 sm:gap-4 lg:grid-cols-12 lg:grid-rows-[15rem_15rem_19rem]">
           <Photo
             img={images.bandStage}
-            sizes="(min-width: 1024px) 42vw, 100vw"
-            className="col-span-2 aspect-[4/3] lg:col-span-5 lg:row-span-2 lg:aspect-auto"
-          />
-          <Photo
-            img={images.bouzouki}
-            sizes="(min-width: 1024px) 24vw, 50vw"
-            className="aspect-[4/5] lg:col-span-3 lg:aspect-auto"
+            sizes="(min-width: 1024px) 58vw, 100vw"
+            className="col-span-2 aspect-[4/3] lg:col-span-7 lg:row-span-2 lg:aspect-auto"
           />
           <Photo
             img={images.zeibekiko}
-            sizes="(min-width: 1024px) 33vw, 50vw"
-            className="aspect-[4/5] lg:col-span-4 lg:row-span-2 lg:aspect-auto"
+            sizes="(min-width: 1024px) 42vw, 50vw"
+            className="aspect-[4/5] lg:col-span-5 lg:row-span-2 lg:aspect-auto"
           />
           <Photo
             img={images.guestBaglamas}
-            sizes="(min-width: 1024px) 24vw, 100vw"
-            className="col-span-2 aspect-[16/10] lg:col-span-3 lg:aspect-auto"
+            sizes="(min-width: 1024px) 33vw, 50vw"
+            className="aspect-[4/5] lg:col-span-4 lg:aspect-auto"
+          />
+          <Photo
+            img={images.bouzouki}
+            sizes="(min-width: 1024px) 66vw, 100vw"
+            className="col-span-2 aspect-[16/9] lg:col-span-8 lg:aspect-auto"
           />
         </div>
 
