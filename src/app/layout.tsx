@@ -37,6 +37,9 @@ export const metadata: Metadata = {
     "ελληνική κουζίνα Θεσσαλονίκη",
   ],
   alternates: { canonical: "/" },
+  robots: site.indexable
+    ? { index: true, follow: true }
+    : { index: false, follow: false, nocache: true, googleBot: { index: false, follow: false, noimageindex: true } },
   openGraph: {
     type: "website",
     locale: "el_GR",

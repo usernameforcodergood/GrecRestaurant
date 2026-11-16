@@ -46,6 +46,13 @@ export const site = {
   /** Restaurant's own slogan (Facebook cover) */
   slogan: "Εδώ. Όπως παλιά. Όπως πάντα.",
 
+  /**
+   * Search-engine visibility. While false, every page sends `noindex, nofollow`
+   * (meta tag + X-Robots-Tag header) so the site is reachable only by link.
+   * Launch: set NEXT_PUBLIC_ALLOW_INDEXING=true in Vercel and redeploy.
+   */
+  indexable: process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true",
+
   /** TODO: set NEXT_PUBLIC_SITE_URL to the final production domain before launch. */
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
 

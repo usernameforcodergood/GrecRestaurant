@@ -53,5 +53,7 @@ Add `src/content/en.ts` with the same `SiteContent` shape and register it in `sr
   original vector logo (`public/images/brand/`).
 - **Menu** PDF or page (see above).
 - **Postal code and map pin** (`address.postalCode`, `address.geo`).
+- **Search engines:** the site is hidden from search (noindex) until launch. To go public, set
+  `NEXT_PUBLIC_ALLOW_INDEXING=true` in Vercel and redeploy.
 - **Production domain:** set `NEXT_PUBLIC_SITE_URL` (used for canonical URL, OG, sitemap, JSON-LD).
 - **Interior video** for the hero (optional).
