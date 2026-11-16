@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Brygada_1918, Manrope, Mansalva } from "next/font/google";
+import { Brygada_1918, Manrope } from "next/font/google";
 import { getContent } from "@/content";
 import { images } from "@/config/images";
 import { site } from "@/config/site";
@@ -16,13 +16,6 @@ const serif = Brygada_1918({
 const sans = Manrope({
   subsets: ["greek", "latin"],
   variable: "--font-manrope",
-  display: "swap",
-});
-
-const script = Mansalva({
-  subsets: ["greek", "latin"],
-  weight: "400",
-  variable: "--font-mansalva",
   display: "swap",
 });
 
@@ -77,7 +70,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang={content.locale} className={`${serif.variable} ${sans.variable} ${script.variable}`}>
+    <html lang={content.locale} className={`${serif.variable} ${sans.variable}`}>
       <body className="antialiased">{children}</body>
     </html>
   );

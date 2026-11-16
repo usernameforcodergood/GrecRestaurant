@@ -56,18 +56,18 @@ export function Header({ nav, menuLink }: HeaderProps) {
       <div className="mx-auto flex h-[var(--header-h)] max-w-7xl items-center justify-between gap-4 px-5 sm:px-8">
         <a href={`#${sectionIds.home}`} className="relative block h-12 w-[4.5rem] shrink-0" aria-label={`${site.name} — ${nav.home}`}>
           <Image
-            src={brand.logoCream.src}
+            src={brand.headerLogoCream.src}
             alt=""
             fill
-            sizes="72px"
+            unoptimized
             priority
             className={cn("object-contain transition-opacity duration-500", solid ? "opacity-0" : "opacity-100")}
           />
           <Image
-            src={brand.logo.src}
+            src={brand.headerLogo.src}
             alt=""
             fill
-            sizes="72px"
+            unoptimized
             priority
             className={cn("object-contain transition-opacity duration-500", solid ? "opacity-100" : "opacity-0")}
           />

@@ -159,6 +159,9 @@ export type ImageKey = keyof typeof images;
 export const brand = {
   logo: { src: "/images/brand/grec-logo.png", width: 830, height: 550 },
   logoCream: { src: "/images/brand/grec-logo-cream.png", width: 830, height: 550 },
+  /** Small, pre-cropped copies served as-is in the header (no image-optimizer round-trip). */
+  headerLogo: { src: "/images/brand/grec-logo-header.png", width: 288, height: 188 },
+  headerLogoCream: { src: "/images/brand/grec-logo-cream-header.png", width: 288, height: 188 },
 } as const;
 
 /**
